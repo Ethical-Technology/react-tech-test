@@ -47,6 +47,8 @@ function App() {
       })
    const y = []
       SHs.forEach(async (sup) => {
+        // You cannot remove this if statement here. 
+        // You must only await getC if sup.nemesis is set
         if (sup.nemesis) {          const nemo = await getC(sup.nemesis)
 
   y.push({
