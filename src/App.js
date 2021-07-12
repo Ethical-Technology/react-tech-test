@@ -42,9 +42,7 @@ function App() {
     setIsL(true)
 
               async function fetchData() {
-      await new Promise((resolve) => {
-        setTimeout(resolve, 500)
-      })
+
    const y = []
       SHs.forEach(async (sup) => {
         // You cannot remove this if statement here. 
